@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* ===========================
+   Theme Variables
+=========================== */
+
+/* *{
+  border: 1px solid red
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Background */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-secondary: #f1f5f9;
+  --surfaceicon: #2d2b2bf7;
+
+  /* Text */
+  --text: #0f172a;
+  --text-secondary: #64748b;
+  --texticon: #ffffff;
+
+  /* Brand */
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --accent: #06b6d4;
+
+  /* Border */
+  --border: #dbe2ea;
+}
+
+.dark {
+  /* Background */
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-secondary: #24303b;
+  --surfaceicon: #1e293b;
+
+  /* Text */
+  --text: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --texticon: #ffff;
+
+  /* Brand */
+  --primary: #60a5fa;
+  --secondary: #a78bfa;
+  --accent: #22d3ee;
+
+  /* Border */
+  --border: #475569;
+}
+
+/* ===========================
+   Global Reset
+=========================== */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===========================
+   Reusable Classes
+=========================== */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
