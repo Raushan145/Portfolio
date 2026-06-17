@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Heading from '../Heading/Heading'
 import { FaLaptopCode } from "react-icons/fa";
 import { motion } from "motion/react";
+import GitImage from '../../assets/GitImage.png'
 
 const Github = () => {
+
   return (
     <section id='Experience'>
           <motion.div 
@@ -21,7 +23,7 @@ const Github = () => {
                 transition={{duration:0.8, delay:0.4}}
                 viewport={{once: true}}
                 
-                className='border px-8 py-3 rounded-2xl bg-(--surface)'>
+                className='  px-10 py-3 rounded-2xl bg-(--surface)'>
                    
                       <Heading text="Data-Diven" heading="Success" size="text-[1.3rem]"/>
                     
@@ -36,7 +38,7 @@ const Github = () => {
                            viewport={{once: true}}
                            className='flex gap-4 items-center'>
                               <span className='text-md'> <FaLaptopCode /> </span>
-                              <span className='text-2xl font-bold'>100</span>
+                              <span className='text-2xl font-bold'>30</span>
                               <span className='text-2xl font-bold bg-gradient-to-r from-blue-300 to-purple-800 bg-clip-text text-transparent'>+</span>
                             </motion.div>
                             <p className='text-[0.7rem] py-1 text-(--text-secondary)'>DSA Problems Solve</p>
@@ -97,9 +99,9 @@ const Github = () => {
                 transition={{duration:0.8, delay:0.4}}
                 viewport={{once: true}}
 
-                className='border px-8 py-3  rounded-2xl bg-(--surface)'>
+                className=' px-8 py-3  rounded-2xl bg-(--surface)'>
                     <Heading text="GitHub" heading="Contributions" size="text-[1.3rem]"/>
-                    <img src="" alt="" className='w-100  h-30 object-cover'/>
+                    <img src={GitImage} alt="GitHub Image" className='w-110  h-30 object-contain'/>
                     <motion.p 
                      initial = {{opacity: 0, y:30}}
                      whileInView = {{opacity:1, y:0}}

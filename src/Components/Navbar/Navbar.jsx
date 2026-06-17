@@ -123,7 +123,7 @@ const Navbar = () => {
                {/* <a href="#" className='text-zinc-800 text-3xl lg:hidden md:hidden sm:block' onClick={toggleMenu}>{showMenu ? <TbMenu3 />: <TbMenu2 />}</a> */}
                     <span className='flex md:hidden text-2xl text-[var-(--text)] cursor-pointer ' onClick={toggleMenu}>{showMenu ? <TbMenu3 /> : <TbMenu2 />}</span>
 
-                <div className='md:flex justify-center items-center hidden gap-5 bg-blue-700 text-white rounded-full px-3 py-1 cursor-pointer'>
+                <div className='md:flex justify-center items-center hidden gap-5 bg-blue-700 text-white rounded-full px-3 py-1 cursor-pointer' id='Contact'>
                         <button>Connect</button>
                         <span className='w-5 h-5 text-lg text-(--text) rounded-full '><FaArrowRightLong /></span>
                 </div>
@@ -131,27 +131,27 @@ const Navbar = () => {
 
             {/*  Mobile Action bar */}
 
-             <ul className={`items-start  absolute top-1 transform flex flex-col gap-6  py-3 pl-4 pb-10 shadow-lg/100 bg-(--surface-secondary) transition-all duration-500 ease-in-out justify-center w-52  dark:bg-slate-900 rounded-xl md:hidden ${showMenu ? 'right-1 opacity-100' : '-right-full opacity-0 pointer-events-none'}`}>
+             <ul className={`items-start  absolute top-1 transform flex flex-col gap-6  py-3 pl-4 pb-10 bg-(--surface) transition-all duration-500 ease-in-out justify-center w-52  dark:bg-slate-900 rounded-xl md:hidden ${showMenu ? 'right-1 opacity-100' : '-right-full opacity-0 pointer-events-none'}`}>
                   
                     <button className='self-end text-4xl pr-4 cursor-pointer'  onClick={() =>setShowMenu(false) }><RxCross2 /></button>
 
-                    <li>
-                        <a href="#Home" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl bg-(--surface) px-5 py-2 rounded-2xl' >Home</a>
+                    <li className='w-full'>
+                        <a href="#Home" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl   px-5 py-2 rounded-2xl' >Home</a>
                     </li>
                     <li>
-                        <a href="#About" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl bg-(--surface) px-5 py-2 rounded-2xl'>About</a>
+                        <a href="#About" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl  px-5 py-2 rounded-2xl'>About</a>
                     </li>
                     <li>
-                        <a href="#Skills" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl bg-(--surface) px-5 py-2 rounded-2xl'>Skills</a>
+                        <a href="#Skills" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl  px-5 py-2 rounded-2xl'>Skills</a>
                     </li>
                     <li>
-                        <a href="#Projects" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl bg-(--surface) px-5 py-2 rounded-2xl'>Projects</a>
+                        <a href="#Projects" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl  px-5 py-2 rounded-2xl'>Projects</a>
                     </li>
                     <li>
-                        <a href="#Exprience" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl bg-(--surface) px-5 py-2 rounded-2xl'>Experience</a>
+                        <a href="#Experience" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl  px-5 py-2 rounded-2xl'>Experience</a>
                     </li>
                     <li>
-                        <a href="#Contact" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl bg-(--surface) px-5 py-2 rounded-2xl'>Contact</a>
+                        <a href="#Contact" className='hover:bg-zinc-200 hover:text-black font-semibold text-2xl  px-5 py-2 rounded-2xl'>Contact</a>
                     </li>
             </ul>
         </motion.nav>

@@ -19,7 +19,7 @@ const Skills = () => {
                     viewport={{once: true}}
 
 
-             key={idx} className='w-80 bg-(--surface-secondary)   rounded-3xl  p-6 shadow-xl'>
+             key={idx} className='w-90 bg-(--surface-secondary)   rounded-3xl  p-6 shadow-xl'>
                     {/* Logo */}
                     <span className={` ${skill.textcol}  text-2xl`}> {skill.logo} </span>
                     <h3 className='font-bold text-xl mt-5'>{skill.type}</h3>

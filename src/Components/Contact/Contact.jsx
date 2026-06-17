@@ -61,30 +61,43 @@ const Contact = () => {
                <div className='flex gap-4 py-3 px-5 pt-4'>
                      {/* Linkedin */}
                     <div>
-                        <a href="" target='blank' rel='noopener noreferrer' 
+                        <a href="https://www.linkedin.com/in/raushan-kumar-b0704b270?utm_source=share_via&utm_content=profile&utm_medium=member_android" target='blank' rel='noopener noreferrer' 
                         className='w-8 h-8 rounded-full bg-(--surfaceicon) text-(--texticon) flex justify-center items-center text-lg hover:bg-[#ffff] hover:text-[#0A66C2] transition duration-300 '><FaLinkedin /></a>
                     </div>
 
                     {/* GitHub */}
                      <div>
-                        <a href="" target='blank' rel='noopener noreferrer' 
+                        <a href="https://github.com/Raushan145" target='blank' rel='noopener noreferrer' 
                         className='w-8 h-8 rounded-full bg-(--surfaceicon) text-(--texticon) flex justify-center items-center text-lg hover:bg-[#ffff] hover:text-black transition duration-300 '><FaGithub /></a>
                     </div>
 
                     {/* Twitter */}
                      <div>
-                        <a href="" target='blank' rel='noopener noreferrer' 
+                        <a href="https://x.com/RaushanKum4295" target='blank' rel='noopener noreferrer' 
                         className='w-8 h-8 rounded-full bg-(--surfaceicon) text-(--texticon) flex justify-center items-center text-lg hover:bg-[#ffff] hover:text-[#0A66C2] transition duration-300 '><FaTwitter /></a>
                     </div>
+
+                    {/* Gamil */}
+                     <div>
+                        <a href="mailto:raushankumar89780@gmail.com" target='blank' rel='noopener noreferrer' 
+                        className='w-8 h-8 rounded-full bg-(--surfaceicon) text-(--texticon) flex justify-center items-center text-lg hover:bg-[#ffff] hover:text-[#EA4335] transition duration-300 '><MdOutlineEmail /></a>
+                    </div>
+
+
                </div>
 
                 </div>
 
                 {/* Form */}
                 <div className=' px-5 pt-5 pb-8 rounded-2xl bg-(--surface)'>
-                    <form action="#" >
+                    <form action="https://api.web3forms.com/submit" method="POST" >
+
+                         <input type="hidden" name="access_key" value="f5587907-1889-4c87-b82a-558d8dc1b589"></input>
+
                         {/* Name & Email */}
                         <div className='flex md:flex-row flex-col  gap-5 py-3'>
+
+                            {/* Name */}
                             <motion.div 
                              initial = {{opacity: 0, y:30}}
                              whileInView = {{opacity:1, y:0}}
@@ -92,10 +105,11 @@ const Contact = () => {
                              viewport={{once: true}}
                             >
                             <label className='text-sm text-(--text) pb-2 block '>Full Name</label>
-                            <input type="text" placeholder='Enter Your Name..' name='name' id='name'
-                            className='w-full rounded-xl bg-(--surface-secondary) px-5  py-1 placeholder:text-(--text-secondary) ' />
+                            <input type="text" placeholder='Enter Your Name..' required autoComplete='off' name='name' id='name'
+                            className='w-full rounded-xl bg-(--surface-secondary) px-5 focus:outline-none py-1 placeholder:text-(--text-secondary) ' />
                             </motion.div>
 
+                            {/* Email */}
                             <motion.div 
                              initial = {{opacity: 0, y:30}}
                              whileInView = {{opacity:1, y:0}}
@@ -103,8 +117,8 @@ const Contact = () => {
                              viewport={{once: true}}
                             >
                              <label className='text-sm text-(--text) pb-2 block'>Email Address</label>
-                            <input type="text" placeholder='Enter Your Email' name="Email" id="Email" 
-                             className=' w-full rounded-xl bg-(--surface-secondary) px-5  py-1 placeholder:text-(--text-secondary) '/>
+                            <input type="text" placeholder='Enter Your Email' required autoComplete='off' name="Email" id="Email" 
+                             className=' w-full rounded-xl bg-(--surface-secondary) px-5 focus:outline-none  py-1 placeholder:text-(--text-secondary) '/>
                             </motion.div>
 
                         </div>
@@ -117,8 +131,8 @@ const Contact = () => {
                             viewport={{once: true}}
                         >
                         <label className='block text-sm text-(--text) pb-2'>Subject</label>
-                        <input type="text" placeholder='Project Inquiry' name="Inquiry" id="Inquiry" 
-                        className='w-full rounded-xl bg-(--surface-secondary) px-5  py-1 placeholder:text-(--text-secondary) '/>
+                        <input type="text" placeholder='Project Inquiry' required autoComplete='off' name="Inquiry" id="Inquiry" 
+                        className='w-full rounded-xl bg-(--surface-secondary) focus:outline-none px-5  py-1 placeholder:text-(--text-secondary) '/>
                         </motion.div>
 
                         <motion.div 
@@ -128,8 +142,8 @@ const Contact = () => {
                             viewport={{once: true}}
                         className='py-4 '>
                         <label className='block text-sm text-(--text) pb-2'>Message</label>
-                        <textarea name="Message" id="Message" placeholder='Your Message here...'
-                        className='w-full h-25 rounded-xl bg-(--surface-secondary) px-5  py-1 placeholder:text-(--text-secondary) '></textarea>
+                        <textarea name="Message" id="Message" autoComplete='off' required placeholder='Your Message here...'
+                        className='w-full h-25 rounded-xl bg-(--surface-secondary) focus:outline-none px-5  py-1 placeholder:text-(--text-secondary) '></textarea>
                         </motion.div>
 
                         <button className='w-full bg-gradient-to-r from-blue-600 to-purple-600 cursor-pointer  py-1 rounded-full font-bold'>Send Message</button>

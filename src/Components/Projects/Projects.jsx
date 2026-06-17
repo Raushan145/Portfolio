@@ -12,10 +12,10 @@ const Projects = () => {
                 transition={{duration:0.8, delay:0.5}}
                 viewport={{once: true}}
             
-            key={idx} className='mt-10  w-80 rounded-2xl bg-(--surface) shadow-2xl overflow-hidden'>
+            key={idx} className='mt-10  w-90 rounded-2xl bg-(--surface) shadow-2xl overflow-hidden'>
                     {/* Image */}
                     <div >
-                        <img src={project.logo}  alt={project.title} className='w-80 h-50 bg-zinc-700 object-cover' />
+                        <img src={project.logo}  alt={project.title} className='w-90 h-50 bg-zinc-700 object-cover' />
                     </div>
 
                     {/* Text para, tech ,Heading */}

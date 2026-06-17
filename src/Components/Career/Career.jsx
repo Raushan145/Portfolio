@@ -14,7 +14,7 @@ const Career = () => {
                 transition={{duration:0.8, delay:0.5}}
                 viewport={{once: true}}
         
-        key={idx} className='max-w-80  p-5 rounded-2xl bg-(--surface)'>
+        key={idx} className='max-w-90  px-7 py-5 rounded-2xl bg-(--surface)'>
                     {/* Year of degree */}
                     <motion.h3
                      initial = {{opacity: 0, y:30}}
@@ -53,7 +53,7 @@ const Career = () => {
                      whileInView = {{opacity:1, y:0}}
                      transition={{duration:0.8, delay:0.8}}
                      viewport={{once: true}}
-                    h3className='text-[0.7rem]'> {career.Desc} </motion.p>
+                     className='text-[0.7rem]'> {career.Desc} </motion.p>
                 </motion.div>
     })
 
@@ -94,7 +94,7 @@ export default Career
         year:"2023-2027",
         Degree:"Bachelor of Computer Science",
         collage:"Technocrats Institute of Technology, Bhopal",
-        CGPA:"6.9/10",
+      
         Desc:"Focus on Software Development, Data Structure, and Database Manaagement.",
         color:"bg-gradient-to-r from-amber-200 to-amber-500"
     },
