@@ -14,7 +14,7 @@ const Career = () => {
                 transition={{duration:0.8, delay:0.5}}
                 viewport={{once: true}}
         
-        key={idx} className='max-w-90  px-7 py-5 rounded-2xl bg-(--surface)'>
+              key={idx} className='max-w-90  px-7 py-5 rounded-2xl bg-(--surface)'>
                     {/* Year of degree */}
                     <motion.h3
                      initial = {{opacity: 0, y:30}}
@@ -68,7 +68,7 @@ const Career = () => {
          className='max-w-300 mx-auto px-10 pb-10 bg-(--surface-secondary) rounded-2xl' id='Experience'>
                 <Heading text="Career" heading="Journey" size="text-[1.8rem]"/>
 
-            <div className='flex md:flex-row flex-col md:gap-0 gap-7 justify-around items-center pt-10'>
+            <div className='flex md:flex-row flex-col md:gap-0 gap-7 justify-around items-center pt-6 md:pt-10'>
                
                {renderCareer}
             </div>
