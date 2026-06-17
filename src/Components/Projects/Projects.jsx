@@ -12,10 +12,10 @@ const Projects = () => {
                 transition={{duration:0.8, delay:0.5}}
                 viewport={{once: true}}
             
-            key={idx} className='mt-10  w-80 rounded-2xl bg-(--surface) shadow-2xl overflow-hidden'>
+            key={idx} className='mt-10  w-90 rounded-2xl bg-(--surface) shadow-2xl overflow-hidden'>
                     {/* Image */}
                     <div >
-                        <img src={project.logo}  alt={project.title} className='w-80 h-50 bg-zinc-700 object-cover' />
+                        <img src={project.logo}  alt={project.title} className='w-90 h-50 bg-zinc-700 object-cover' />
                     </div>
 
                     {/* Text para, tech ,Heading */}
@@ -53,7 +53,7 @@ const Projects = () => {
                   <Heading text="Featured" heading="Projects" size="text-[1.8rem]"/>
                   <p className='max-w-130 text-(--text) '>A Selection of my recent work involving complex logic,modern UI, and robust backends.</p>
                 </div>
-                <div className='md:flex items-center gap-5 md:mt-10 border px-3 md:py-1 py-2 rounded-full hidden '>
+                <div className='md:flex items-center gap-5 md:mt-10 border px-3 mx-auto md:py-1 py-2 rounded-full hidden '>
                     <a href="#Projects">View All Projects</a>
                     <span><FaArrowRightLong /></span>
                 </div>
