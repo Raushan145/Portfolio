@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import resume from '../../assets/Resume/raushanResume.pdf'
 import { motion } from "motion/react"
+import RaushanImage from "../../assets/RaushanImage.jpeg";
 
 const Hero = () => {
 
@@ -83,7 +84,7 @@ const Hero = () => {
             viewport={{once: true}}
 
              className='pb-10 md:pb-0'>
-                <img src="https://tse1.mm.bing.net/th/id/OIP.cW0wzJYojHH-xxW35Wj7dQHaHa?pid=Api&h=220&P=0" alt="image" className='h-70 w-70 rounded-full' />
+                <img src={RaushanImage} alt="image"  className='h-70 w-70 object-cover scale-x-100 rounded-full' />
             </motion.div>
         </motion.div>
    </section>

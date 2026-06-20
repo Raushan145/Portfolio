@@ -41,7 +41,7 @@ const Github = () => {
                               <span className='text-2xl font-bold'>30</span>
                               <span className='text-2xl font-bold bg-gradient-to-r from-blue-300 to-purple-800 bg-clip-text text-transparent'>+</span>
                             </motion.div>
-                            <p className='text-[0.7rem] py-1 text-(--text-secondary)'>DSA Problems Solve</p>
+                            <p className='text-[0.7rem] py-1 font-bold text-(--text-secondary)'>DSA Problems Solve</p>
                           </div>
 
                           {/* 2 */}
@@ -52,10 +52,10 @@ const Github = () => {
                             transition={{duration:0.8, delay:0.4}}
                             viewport={{once: true}} className='flex gap-4 items-center'>
                               <span className='text-md'> <FaLaptopCode /> </span>
-                              <span className='text-2xl font-bold'>100</span>
+                              <span className='text-2xl font-bold'>10</span>
                               <span className='text-2xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent'>+</span>
                             </motion.div>
-                            <p className='text-[0.7rem] py-1 text-(--text-secondary)'>DSA Problems Solve</p>
+                            <p className='text-[0.7rem] py-1 font-bold text-(--text-secondary)'>Projects</p>
                        </div>
 
                        {/* 3 */}
@@ -71,7 +71,7 @@ const Github = () => {
                             <span className='text-2xl font-bold'>100</span>
                             <span className='text-2xl font-bold bg-gradient-to-r from-amber-200 to-amber-500 bg-clip-text text-transparent'>+</span>
                           </motion.div>
-                          <p className='text-[0.7rem] py-1 text-(--text-secondary)'>DSA Problems Solve</p>
+                          <p className='text-[0.7rem] py-1 font-bold text-(--text-secondary)'>Commit on GitHub</p>
                        </div>
 
                        {/* 4 */}
@@ -86,7 +86,7 @@ const Github = () => {
                             <span className='text-2xl font-bold'>100</span>
                             <span className='text-2xl font-bold bg-gradient-to-r from-blue-300 to-purple-800 bg-clip-text text-transparent'>+</span>
                           </motion.div>
-                          <p className='text-[0.7rem] py-1 text-(--text-secondary)'>DSA Problems Solve</p>
+                          <p className='text-[0.7rem] font-bold py-1 text-(--text-secondary)'>Industry Certification</p>
                        </div>
                     </div>
                     
